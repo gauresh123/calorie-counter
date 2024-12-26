@@ -10,9 +10,16 @@ function App() {
   return (
     <div className="container">
       <h2>My Calories</h2>
-      <button className="btn" onClick={() => setIsAddOpen(true)}>
-        Add Food
-      </button>
+      <div className="caloryContainer">
+        <h3>
+          Total Calories:
+          {data.reduce((acc, curr) => (acc += Number(curr.calory)), 0)}
+        </h3>
+        <button className="btn" onClick={() => setIsAddOpen(true)}>
+          Add Food
+        </button>
+      </div>
+
       <Home data={data} setData={(val) => setData(val)} />
       {isAddOpen && (
         <AddData
