@@ -46,7 +46,7 @@ function AddData({ onClose, data, setData }) {
               type="date"
               name="date"
               value={inputData?.date}
-              id=""
+              id="date"
               onChange={handleChange}
             />
           </div>
