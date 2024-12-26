@@ -1,0 +1,34 @@
+.tablecontainer {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+
+  th,
+  td {
+    text-align: left;
+    width: 20%;
+    padding: 8px;
+  }
+  td {
+    border: 1px solid #ddd;
+  }
+  tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+
+  thead {
+    background-color: #009879;
+    color: white;
+  }
+  .food {
+    width: 30%;
+  }
+  .deletebtn {
+    background-color: rgb(145, 12, 12);
+    color: white;
+    padding: 6px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  .btn {
+    float: right;
+    padding: 10px 20px;
+    align-self: flex-end;
+    background-color: rgb(21, 58, 21);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  h2 {
+    text-align: center;
+  }
+}
