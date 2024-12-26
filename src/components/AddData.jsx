@@ -18,7 +18,7 @@ function AddData({ onClose, data, setData }) {
     }
 
     if (!inputData.calory) {
-      alert("Please add valory");
+      alert("Please add Calorie");
       return;
     }
     setData((prev) => [...prev, inputData]);
@@ -51,7 +51,7 @@ function AddData({ onClose, data, setData }) {
             />
           </div>
           <div>
-            <span>Calory</span>
+            <span>Calorie</span>
             <input
               type="number"
               name="calory"
