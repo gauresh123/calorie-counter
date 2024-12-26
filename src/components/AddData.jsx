@@ -2,7 +2,11 @@ import React, { useState } from "react";
 import "../css/AddData.scss";
 
 function AddData({ onClose, data, setData }) {
-  const [inputData, setInputData] = useState({});
+  const [inputData, setInputData] = useState({
+    food: "",
+    date: new Date().toISOString().split("T")[0],
+    calory: "",
+  });
   const handleChange = (e) => {
     setInputData({ ...inputData, [e.target.name]: e.target.value });
   };

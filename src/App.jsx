@@ -2,9 +2,10 @@ import React, { useEffect, useState } from "react";
 import "./App.scss";
 import Home from "./components/Home";
 import AddData from "./components/AddData";
+import { dummyData } from "./constants/dummyData";
 
 function App() {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState(dummyData);
   const [isAddOpen, setIsAddOpen] = useState(false);
 
   return (
